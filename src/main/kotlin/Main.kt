@@ -2,26 +2,29 @@ package it.posteitaliane.dccli
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.subcommands
+import com.github.ajalt.clikt.parameters.arguments.argument
+import com.github.ajalt.clikt.parameters.arguments.convert
+import com.github.ajalt.clikt.parameters.arguments.default
 import org.apache.poi.ss.usermodel.WorkbookFactory
-import org.apache.poi.ss.util.CellAddress
 import org.jsoup.Connection
 import org.jsoup.Jsoup
-import java.io.File
 import java.io.FileOutputStream
-import java.nio.file.Files
-import kotlin.io.path.Path
+import java.time.LocalDate
 
 class DailyReportCmd : CliktCommand(name = "daily") {
+
+    val day by argument(name = "day")
+        .convert { "$it%2F05%2F2024" }
+        .default("${LocalDate.now().dayOfMonth}%2F05%2F2024")
+
     override fun run() {val content:String = Jsoup::class.java.classLoader.getResource("post_body.txt")?.readText()!!
 
-        /*Jsoup.connect("http://10.194.137.36/ACCESSIDC/ReportGiornaliero.aspx")
+        Jsoup.connect("http://10.194.137.36/ACCESSIDC/ReportGiornaliero.aspx")
             .auth { it.credentials("rete\\manzogi9", "6Krum1r1") }
-            .requestBody(content)
+            .requestBody("$content$day")
             .method(Connection.Method.POST)
-            .execute()*/
-
-        Jsoup
-            .parse(File("index.html")).select("table#ADC_ContenutoSpecificoPagina_gvGiornaliero>tbody>tr").also { trs ->
+            .execute()
+            .parse().select("table#ADC_ContenutoSpecificoPagina_gvGiornaliero>tbody>tr").also { trs ->
 
                 val colmap = mapOf(
                     0 to 0, 1 to 1, //COGNOME, NOME
