@@ -1,0 +1,1069 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head><title>
+	Untitled Page
+</title><link href="App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="App_Themes/Default/Default.css" type="text/css" rel="stylesheet" /><style type="text/css">
+	/* <![CDATA[ */
+	#ContentPlaceHolder1_Menu1 { background-color:#E0E0E0; }
+	#ContentPlaceHolder1_Menu1 img.icon { border-style:none;vertical-align:middle; }
+	#ContentPlaceHolder1_Menu1 img.separator { border-style:none;display:block; }
+	#ContentPlaceHolder1_Menu1 ul { list-style:none;margin:0;padding:0;width:auto; }
+	#ContentPlaceHolder1_Menu1 ul.dynamic { background-color:#E0E0E0;z-index:1;margin-left:2px; }
+	#ContentPlaceHolder1_Menu1 a { color:#284E98;font-family:Verdana;font-size:0.8em;text-decoration:none;white-space:nowrap;display:block; }
+	#ContentPlaceHolder1_Menu1 a.static { padding:2px 5px 2px 5px;color:#000040;text-decoration:none; }
+	#ContentPlaceHolder1_Menu1 a.popout { background-image:url("/ACCESSIDC/WebResource.axd?d=bSlaGfK3uwwmkkbhm_M9fzISJW2fz3i9aq8id1fB3Bh73L-MTsQBO3f6wzBKG92QOsiGTo77E6MLjEgkTNvQc0VrTGz6g7_z9pHWSjsuLoA1&t=638286118241696996");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#ContentPlaceHolder1_Menu1 a.dynamic { padding:2px 5px 2px 5px;color:#000040;text-decoration:none; }
+	#ContentPlaceHolder1_Menu1 a.level2 { padding-left:10px; }
+	#ContentPlaceHolder1_Menu1 a.static.selected { background-color:#507CD1;text-decoration:none; }
+	#ContentPlaceHolder1_Menu1 a.dynamic.selected { background-color:PaleTurquoise;text-decoration:none; }
+	#ContentPlaceHolder1_Menu1 a.static.highlighted { color:White;background-color:#284E98; }
+	#ContentPlaceHolder1_Menu1 a.dynamic.highlighted { color:White;background-color:#284E98; }
+	/* ]]> */
+</style></head>
+<body>
+
+    <form method="post" action="./ReportGiornaliero.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkzOTc0MDMwMg9kFgJmD2QWAgIDD2QWBAIBD2QWBAIDDw8WAh4EVGV4dAUTUkVURVxtYW56b2dpOSAtLS0gMGRkAgcPPCsADQIADxYCHgtfIURhdGFCb3VuZGdkDBQrAAIFAzA6MBQrAAIWDh8ABQoqKipNRU5VKioqHgVWYWx1ZQUKKioqTUVOVSoqKh4HVG9vbFRpcAUGdGl0b2xvHgdFbmFibGVkZx4KU2VsZWN0YWJsZWgeCERhdGFQYXRoBSRkMWIzYzg4OS0wYTQ1LTRhNWItOWIzOC1mNzk0ZjIzNGFmYjkeCURhdGFCb3VuZGcUKwADBQcwOjAsMDoxFCsAAhYOHwAFCEdFU1RJT05FHwIFCEdFU1RJT05FHwMFJEdlc3Rpb25lIGFuYWdyYWZpY2EgZSBhdXRvcml6emF6aW9uaR8EZx8FaB8GBSQ0OTNhYWI3ZC1lZGU5LTQzZGYtOTYwMi1lN2YyNTI3YmJjMzEfB2cUKwAFBQ8wOjAsMDoxLDA6MiwwOjMUKwACFhAfAAUbQW5hZ3JhZmljYSA+IEF1dG9yaXp6YXppb25pHwIFG0FuYWdyYWZpY2EgPiBBdXRvcml6emF6aW9uaR4LTmF2aWdhdGVVcmwFGi9BQ0NFU1NJREMvQW5hZ3JhZmljYS5hc3B4HwMFJEdlc3Rpb25lIGFuYWdyYWZpY2EgZSBhdXRvcml6emF6aW9uaR8EZx8FZx8GBRovYWNjZXNzaWRjL2FuYWdyYWZpY2EuYXNweB8HZ2QUKwACFhAfAAUZSW5zZXJpbWVudG8gaW4gYW5hZ3JhZmljYR8CBRlJbnNlcmltZW50byBpbiBhbmFncmFmaWNhHwgFHC9BQ0NFU1NJREMvTnVvdmVQZXJzb25lLmFzcHgfAwUXR2VzdGlvbmUgYXV0b3JpenphemlvbmkfBGcfBWcfBgUcL2FjY2Vzc2lkYy9udW92ZXBlcnNvbmUuYXNweB8HZ2QUKwACFhAfAAUIU29jaWV0w6AfAgUIU29jaWV0w6AfCAUXL0FDQ0VTU0lEQy9Tb2NpZXRhLmFzcHgfAwUIU29jaWV0w6AfBGcfBWcfBgUXL2FjY2Vzc2lkYy9zb2NpZXRhLmFzcHgfB2dkFCsAAhYQHwAFCVN0cnV0dHVyZR8CBQlTdHJ1dHR1cmUfCAUZL0FDQ0VTU0lEQy9TdHJ1dHR1cmUuYXNweB8DBRhHZXN0aW9uZSBTdHJ1dHR1cmUgUG9zdGUfBGcfBWcfBgUZL2FjY2Vzc2lkYy9zdHJ1dHR1cmUuYXNweB8HZ2QUKwACFg4fAAUMUkVQT1JUSVNUSUNBHwIFDFJFUE9SVElTVElDQR8DBQxSRVBPUlRJU1RJQ0EfBGcfBWgfBgUkYzI4ZWViNGMtYjdjZC00MjhhLTk0MmYtNDQ1NTRhMmYwMGZhHwdnFCsABwUXMDowLDA6MSwwOjIsMDozLDA6NCwwOjUUKwACFhAfAAUUTW9kLiBSQVMgcGVyIFRlbGVjb20fAgUUTW9kLiBSQVMgcGVyIFRlbGVjb20fCAUZL0FDQ0VTU0lEQy9SZXBvcnRSQVMuYXNweB8DBRdNb2RlbGxvIFJBUyBwZXIgVEVMRUNPTR8EZx8FZx8GBRkvYWNjZXNzaWRjL3JlcG9ydHJhcy5hc3B4HwdnZBQrAAIWEB8ABRVSZXBvcnQgUGVyc29uYWxpenphdGkfAgUVUmVwb3J0IFBlcnNvbmFsaXp6YXRpHwgFHi9BQ0NFU1NJREMvUmVwb3J0QXV0b3JpenouYXNweB8DBSFSZXBvcnQgcGFyYW1ldHJpY2kgYXV0b3JpenphemlvbmkfBGcfBWcfBgUeL2FjY2Vzc2lkYy9yZXBvcnRhdXRvcml6ei5hc3B4HwdnZBQrAAIWEh8EZx8HZx8GBSEvYWNjZXNzaWRjL3JlcG9ydGdpb3JuYWxpZXJvLmFzcHgfAAUSUmVwb3J0IEdpb3JuYWxpZXJvHwIFElJlcG9ydCBHaW9ybmFsaWVybx8FZx8DBSlSZXBvcnQgYXV0b3JpenphemlvbmkgdmFsaWRlIHBlciB1bmEgZGF0YR4IU2VsZWN0ZWRnHwgFIS9BQ0NFU1NJREMvUmVwb3J0R2lvcm5hbGllcm8uYXNweGQUKwACFhAfAAURUmVwb3J0IFBvcnRpbmVyaWEfAgURUmVwb3J0IFBvcnRpbmVyaWEfCAUgL0FDQ0VTU0lEQy9SZXBvcnRQb3J0aW5lcmlhLmFzcHgfAwURUmVwb3J0IFBvcnRpbmVyaWEfBGcfBWcfBgUgL2FjY2Vzc2lkYy9yZXBvcnRwb3J0aW5lcmlhLmFzcHgfB2dkFCsAAhYQHwAFEVJlcG9ydCBU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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/ACCESSIDC/WebResource.axd?d=aMWzOP0E_k_15sYp5vHhvlTpTF-xJrAA91B30VMUrxismMFzYJH1su6lw-K0VrZDOIjtSNaHlC3s3h7BOvt_e_QFLmqs_kMnBZ1bVOU7dWc1&amp;t=638286118241696996" type="text/javascript"></script>
+
+
+<script src="/ACCESSIDC/WebResource.axd?d=UHzk2EyIn6BdKi3QuxA_sjtoR7QM4uTFX9NyW43dQLDf-Wa_3gG3osPBXrPIJW77_VDHAMynsdG5oKkABS-GyRExFNxgLmZg_CbrtMnlxm01&amp;t=638286118241696996" type="text/javascript"></script>
+<script src="/ACCESSIDC/WebResource.axd?d=2kK_BqNqRu1zqmWLmKNWt6QAsTLZGDK5LvYQ_q8KGeiQ1D4YnUqy_OFg9zH0YYL7J22myzxPbzYnRRZ1tFvPzhu1x19E3yvvjQdJeSR3rTM1&amp;t=638286118241696996" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="986B79B3" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB7PgWH8N9IRo95Ou9KWpUNBpF2Wcu1s5URtQJYh+f7jm4noZHqfbUzLIq+IUVEZFa9E7XOHp9sxs8QGj4lufb5o9LZNLu8uKWRw7gnEfQOyvFtNKCHdNKHt3J4HIbfAARC6hNCd/thBpsg0eCBEoHt6toXN2LEp3Z+Fy4oukCkAW5sgG+3EOLCooMLJHtEPdnZfWC5yjkuQ8sM8TmzNlPf847QzUKvo3RIlPi5wZy8NPPkuRtk/owx3OwYh9sNp/XXM4Ekzxu2sieJKwzgc7U7y0aBJueN3O3BcmQ26KFpt7wKGBSMFL7Z/JzpzkCp2X/scIDp71GkIZuSNYJH/uj7fXVUeLTDhScm6ITlz2TvgtIx3FmmtTHsak2blEr8bL06hPjRF/Ju7r5UUKUQ1YV1QbJaeMWlWq1++weUAVbnqvjlwMZ/GJSJslZxCWRuvtwMQ16ShCu6t3t3dQjGa8Y1u20AL8iAEPW5I1n8vZ5gaidfAV2DNoNBawFtU+NdjdIQAM106UJhiLHwlVMkZBz3aSTefg+Y91VeeWYSV3G7itMY2FX9nuJFFUp/GEOxMXUGUFCdpOhwDXi8gnNJebSs8UI34h4FH6S6BdXLvnrCatEWSDX8aesj8HJ8WzfQYFrKdlMpVH4Ma6wg9z4XaJZcdJVqrv7gipI1BTRTRmJTVnA==" />
+</div>
+    <div id="pagecontainer">
+    
+    <div id="banner">
+    <span id="ContentPlaceHolder1_Label1" style="display:inline-block;font-family:Verdana;font-size:16pt;font-weight:bold;font-style:italic;width:87%;text-align: right">GESTIONE ACCESSI DATA CENTER</span>
+        &nbsp; &nbsp;&nbsp;
+        <span id="ContentPlaceHolder1_lblIdent" style="display:inline-block;height:1px;width:216px;font-size: xx-small;
+            text-align: LEFT">RETE\manzogi9 --- 0</span>&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <a href="#ContentPlaceHolder1_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/ACCESSIDC/WebResource.axd?d=fDAHd4Ukyxh315BBbC9hPC8WYL4HqFwNVD8NKeKrnpbc516GJ3jUpkBH5fMAzqksB2JiODO0qVlb_p8KQkEEXOIs5kK-BFq-NIPG5fuvTS41&amp;t=638286118241696996" width="0" height="0" style="border-width:0px;" /></a><div id="ContentPlaceHolder1_Menu1">
+	<ul class="level1">
+		<li><a title="titolo" class="level1">
+                ***MENU***
+            </a></li><li><a title="Gestione anagrafica e autorizzazioni" class="popout level2">
+                GESTIONE
+            </a><ul class="level3">
+			<li><a title="Gestione anagrafica e autorizzazioni" class="level3" href="/ACCESSIDC/Anagrafica.aspx">Anagrafica > Autorizzazioni</a></li><li><a title="Gestione autorizzazioni" class="level3" href="/ACCESSIDC/NuovePersone.aspx">Inserimento in anagrafica</a></li><li><a title="Società" class="level3" href="/ACCESSIDC/Societa.aspx">Società</a></li><li><a title="Gestione Strutture Poste" class="level3" href="/ACCESSIDC/Strutture.aspx">Strutture</a></li>
+		</ul></li><li><a title="REPORTISTICA" class="popout level2">
+                REPORTISTICA
+            </a><ul class="level3">
+			<li><a title="Modello RAS per TELECOM" class="level3" href="/ACCESSIDC/ReportRAS.aspx">Mod. RAS per Telecom</a></li><li><a title="Report parametrici autorizzazioni" class="level3" href="/ACCESSIDC/ReportAutorizz.aspx">Report Personalizzati</a></li><li><a title="Report autorizzazioni valide per una data" class="level3 selected" href="/ACCESSIDC/ReportGiornaliero.aspx">Report Giornaliero</a></li><li><a title="Report Portineria" class="level3" href="/ACCESSIDC/ReportPortineria.aspx">Report Portineria</a></li><li><a title="Report Ticket SDM" class="level3" href="/ACCESSIDC/ReportTicket.aspx">Report Ticket SDM</a></li><li><a title="Directory contenente i file creati dall&#39;applicativo ADC" class="level3" href="/ACCESSIDC/tempRAS">File Repository (liste rinnovi, report)</a></li>
+		</ul></li>
+	</ul>
+</div><a id="ContentPlaceHolder1_Menu1_SkipLink"></a>
+        &nbsp;&nbsp;
+              
+                
+        &nbsp;&nbsp;
+        
+        &nbsp;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_lnkHelp" href="ADC_Help_v1_6.pdf">Help</a></div>
+            
+            
+            
+<div>
+    &nbsp;<span id="ADC_ContenutoSpecificoPagina_lblReportTitolo" style="display:inline-block;background-color:Gray;font-family:Tahoma;font-size:Large;height:28px;width:100%;text-align: CENTER">REPORT GIORNALIERO</span>&nbsp;
+    
+    
+    <div id="ADC_ContenutoSpecificoPagina_pnComandi" style="height:50px;width:703px;">
+	
+    <br/>
+     <span id="ADC_ContenutoSpecificoPagina_Label3" style="display:inline-block;width:123px;">Data Center:</span>
+    <select name="ctl00$ADC_ContenutoSpecificoPagina$ddlIDDC" id="ADC_ContenutoSpecificoPagina_ddlIDDC" style="font-family:Tahoma;font-size:X-Small;height:18px;width:79px;">
+		<option value="MI1">MI1</option>
+		<option value="RM1">RM1</option>
+		<option value="RM2">RM2</option>
+		<option value="RMB">RMB</option>
+		<option selected="selected" value="TO1">TO1</option>
+
+	</select><br/>
+     <span id="ADC_ContenutoSpecificoPagina_Label4" style="display:inline-block;height:18px;width:112px;">Giorno:</span>
+        &nbsp;&nbsp;
+        <input name="ctl00$ADC_ContenutoSpecificoPagina$txtData" type="text" value="9/05/2024" id="ADC_ContenutoSpecificoPagina_txtData" title="Verranno restituite le autorizzazioni temporanee valide nella data specificata" style="font-family:Tahoma;font-size:X-Small;height:14px;width:72px;" />
+        <span id="ADC_ContenutoSpecificoPagina_valData8" style="display:inline-block;width:84px;">gg/mm/aaaa</span><br />
+    <a id="ADC_ContenutoSpecificoPagina_lnkFiltraPerParametri1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ADC_ContenutoSpecificoPagina$lnkFiltraPerParametri1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;width:207px;">Filtra</a>
+        <a id="ADC_ContenutoSpecificoPagina_lnkEsportaInExcel" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ADC_ContenutoSpecificoPagina$lnkEsportaInExcel&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;width:227px;">Esporta in Excel</a>
+        <span id="ADC_ContenutoSpecificoPagina_lblnumRecord" style="display:inline-block;color:Black;font-family:Tahoma;font-weight:bold;font-style:italic;width:257px;">21 record.</span>
+</div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
+	<table cellspacing="1" rules="all" border="1" id="ADC_ContenutoSpecificoPagina_gvGiornaliero" style="background-color:White;border-collapse:collapse">
+		<tr align="center" valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<th scope="col">Cognome</th><th scope="col">Nome</th><th scope="col">Nazionalità</th><th scope="col">Data di nascita</th><th scope="col">CodFiscale</th><th scope="col">TipoDoc</th><th scope="col">Num.Doc.</th><th scope="col">Scad.Doc.</th><th scope="col">Telefono</th><th scope="col">Num. Badge Poste</th><th scope="col">Num. Badge TO</th><th scope="col">Società</th><th scope="col">Strutt. Richiedente</th><th scope="col">DC</th><th scope="col">Profilo</th><th scope="col">Locali</th><th scope="col">Decorrenza Autorizz.</th><th scope="col">Scadenza Autorizz.</th><th scope="col">Note</th><th scope="col">Aut Temporanea</th><th scope="col">Badge Temporaneo TO</th><th scope="col">Gruppo Accesso TO</th>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_0">BARBERA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_0">GIUSEPPE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_0">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_0">12/10/1976</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_0">BRBGPP76R12L219M</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_0">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_0">CA07591KH</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_0">12/10/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_0"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_0"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_0"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_0">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_0">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_0">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_0">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_0">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_0">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_0">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_0">PERSONALE DI GUARDIANIA</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_0" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl02$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>273</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_1">CARLOMAGNO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_1">LUCIANO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_1">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_1">20/03/1976</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_1">CRLLCN76C20L219U</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_1">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_1">CA66857JD</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_1">20/03/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_1"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_1"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_1"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_1">NSR PER HPE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_1">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_1">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_1">TO1_SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_1">SALE SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_1">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_1">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_1">PRESIDIO HPE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_1" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl03$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>276</td><td>HPE</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_2">CATONE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_2">GIUSEPPE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_2">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_2">30/04/1969</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_2">CTNGPP69D30F335B</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_2">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_2">AU2835668</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_2">30/04/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_2"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_2"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_2"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_2">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_2">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_2">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_2">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_2">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_2">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_2">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_2">PERSONALE DI GUARDIANIA</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_2" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl04$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>253</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_3">D'INGEO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_3">ANDREA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_3">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_3">31/10/2004</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_3">DNGNDR04R31C722K</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_3">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_3">CA76976KM</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_3">31/10/2027</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_3"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_3"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_3"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_3">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_3">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_3">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_3">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_3">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_3">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_3">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_3">PERSONALE COSMOPOL</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_3" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl05$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>267</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_4">D'INNOCENZIO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_4">NICOLO'</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_4">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_4">25/04/1995</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_4">DNNNCL95D25L219Z</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_4">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_4">CA36532GU</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_4">25/04/2031</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_4"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_4"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_4"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_4">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_4">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_4">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_4">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_4">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_4">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_4">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_4">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_4" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl06$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>261</td><td>GDC_N</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_5">DE CAROLIS</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_5">ANGELO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_5">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_5">16/11/1970</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_5"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_5">PA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_5">U17X40657X</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_5">16/11/2026</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_5"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_5"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_5"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_5">ARGELATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_5">IMM/AINO/PRES IMM PIEMONTE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_5">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_5">TO1_MANUTENZ_INFRASTR</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_5">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + TLC + SALE SISTEMI + CARRIER + INTERRATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_5">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_5">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_5">MANUTENZIONE DC TO</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_5" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl07$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>299</td><td>MANUTENTORI</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_6">DE LUCA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_6">FRANCESCO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_6">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_6">03/09/1975</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_6">DLCFNC75P03L219Q</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_6">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_6">CA76346ME</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_6">03/09/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_6"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_6"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_6"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_6">ARGELATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_6">IMM/AINO/PRES IMM PIEMONTE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_6">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_6">TO1_MANUTENZ_INFRASTR</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_6">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + TLC + SALE SISTEMI + CARRIER + INTERRATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_6">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_6">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_6">MANUTENZIONE DC TO</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_6" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl08$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>301</td><td>MANUTENTORI</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_7">FERRANDO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_7">LAMBERTO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_7">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_7">27/11/1960</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_7">FRRLBR60S27L219U</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_7">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_7">AV1496892</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_7">27/11/2025</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_7"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_7"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_7"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_7">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_7">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_7">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_7">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_7">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_7">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_7">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_7">PERSONALE DI GUARDIANIA</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_7" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl09$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>295</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_8">FERRERO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_8">ALBERTO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_8">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_8">24/04/1997</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_8">FRRLRT97D24L219E</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_8">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_8">AV3372503</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_8">24/04/2028</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_8"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_8"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_8"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_8">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_8">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_8">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_8">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_8">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_8">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_8">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_8">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_8" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl10$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>320</td><td>GDC_N</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_9">GIORDANO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_9">PIETRO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_9">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_9">09/01/1976</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_9">GRDPTR76A09L219M</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_9">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_9">CA36226DK</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_9">09/01/2030</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_9"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_9"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_9"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_9">ARGELATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_9">IMM/AINO/PRES IMM PIEMONTE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_9">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_9">TO1_MANUTENZ_INFRASTR</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_9">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + TLC + SALE SISTEMI + CARRIER + INTERRATO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_9">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_9">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_9">MANUTENZIONE DC TO</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_9" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl11$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>279</td><td>MANUTENTORI</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_10">GULLA'</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_10">LUCA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_10">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_10">09/01/1993</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_10">GLLLCU93A09L219U</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_10">PA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_10">TO6324620S</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_10">09/01/2026</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_10"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_10"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_10"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_10">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_10">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_10">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_10">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_10">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_10">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_10">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_10">PERSONALE DI GUARDIANIA</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_10" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl12$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>310</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_11">LECCESE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_11">ALESSANDRO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_11">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_11">05/05/1976</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_11">LCCLSN76E05L219A</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_11">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_11">CA94989OW</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_11">05/05/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_11"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_11"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_11"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_11">NSR PER HPE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_11">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_11">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_11">TO1_SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_11">SALE SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_11">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_11">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_11">MANUTENTORE HW</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_11" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl13$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>255</td><td>HPE</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_12">MARANGIOLO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_12">ROSALBA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_12">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_12">20/08/1968</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_12"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_12">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_12">CA64205RK</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_12">20/08/2033</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_12"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_12"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_12"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_12">EURO & PROMOS S.P.A.</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_12">IMM/AINO/PRES IMM PIEMONTE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_12">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_12">TO1_INGRESSO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_12">BUSSOLA/UFFICI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_12">06/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_12">10/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_12">SERVIZIO IGIENE AMBIENTALE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_12" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl14$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>274</td><td>BUSSOLA</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_13">MAURO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_13">MARTINO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_13">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_13">28/03/1966</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_13">MRAMTN66C28L055W</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_13">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_13">AX8004376</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_13">28/03/2027</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_13"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_13"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_13"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_13">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_13">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_13">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_13">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_13">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_13">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_13">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_13">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_13" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl15$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>296</td><td>GDC_N</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_14">MIGNOGNA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_14">MICHELE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_14">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_14">26/05/1998</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_14">MGNMHL98E26B519T</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_14">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_14">AX8902571</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_14">25/08/2028</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_14"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_14"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_14"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_14">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_14">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_14">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_14">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_14">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_14">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_14">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_14">SERVIZI FIDUCIARU</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_14" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl16$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>287</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_15">QUIRICO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_15">GIUSEPPE UGO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_15">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_15">23/01/1972</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_15">QRCGPP72A23L219P</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_15">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_15">CA27436GO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_15">23/01/2031</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_15"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_15"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_15"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_15">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_15">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_15">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_15">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_15">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_15">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_15">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_15">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_15" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl17$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>263</td><td>GDC_N</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_16">RIGOTTI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_16">DARIO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_16">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_16">23/09/1994</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_16">RGTDRA94P23L219K</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_16">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_16">CA83418RG</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_16">23/09/2033</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_16"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_16"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_16"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_16">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_16">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_16">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_16">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_16">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_16">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_16">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_16">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_16" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl18$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>307</td><td>GDC_N</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_17">SANSONE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_17">CLAUDIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_17">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_17">24/01/1966</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_17"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_17">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_17">AX5825812</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_17">24/01/2027</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_17"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_17"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_17"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_17">EURO & PROMOS S.P.A.</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_17">IMM/AINO/PRES IMM PIEMONTE</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_17">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_17">TO1_INGRESSO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_17">BUSSOLA/UFFICI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_17">06/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_17">10/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_17">SERVIZIO IGIENE AMBIENTALE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_17" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl19$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>266</td><td>BUSSOLA</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_18">SANTISI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_18">ANDREA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_18">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_18">06/10/1998</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_18">SNTNDR98R06C722Y</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_18">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_18">CA70608MN</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_18">06/10/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_18"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_18"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_18"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_18">COSMOPOL SECURITY</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_18">TA/ATTA NO/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_18">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_18">TO1_SICUREZZA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_18">GUARDIANIA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_18">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_18">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_18">PERSONALE DI GUARDIANIA</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_18" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl20$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>284</td><td>COSMOPOL</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_19">TROTTA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_19">ROBERTO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_19">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_19">05/09/1968</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_19">TRTRRT68P05L219K</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_19">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_19">CA86293LV</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_19">05/09/2032</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_19"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_19"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_19"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_19">IBM</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_19">DTO/IT/I/MDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_19">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_19">TO1_SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_19">SALE SISTEMI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_19">09/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_19">10/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_19">SMONTAGGIO BATTERIE Z14</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_19" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl21$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>292</td><td>0A3T</td>
+		</tr><tr valign="top" style="font-family:Tahoma;font-size:Smaller;">
+			<td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label1_20">ZITO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label2_20">FABIO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label3_20">ITALIANA</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label4_20">22/03/1978</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label5_20">ZTIFBA78C22C342R</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label6_20">CI</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label7_20">CA63083P4</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label8_20">22/03/2033</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label9_20"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label10_20"></span>
+                </td><td>
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label11_20"></span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label13_20">ALMAVIVA/DGS/ENGINEERING D.HUB</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label14_20">DTO/IT/I/MDC/TO</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label15_20">TO1</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label16_20">TO1_GDC</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label17_20">GUARDIANIA + CONTROL ROOM + LOCALE TECNICO + LOCALE SECURITY + MAGAZZINO + LABORATORIO + TLC + SALE SISTEMI + CARRIER</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label19_20">01/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label20_20">31/05/2024</span>
+                </td><td style="white-space:nowrap;">
+                    <span id="ADC_ContenutoSpecificoPagina_gvGiornaliero_Label21_20">CONSULENTE</span>
+                </td><td>
+                    <span class="aspNetDisabled"><input id="ADC_ContenutoSpecificoPagina_gvGiornaliero_CheckBox1_20" type="checkbox" name="ctl00$ADC_ContenutoSpecificoPagina$gvGiornaliero$ctl22$CheckBox1" checked="checked" disabled="disabled" /></span>
+                </td><td>293</td><td>GDC_N</td>
+		</tr>
+	</table>
+</div>
+
+                
+</div>
+
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ADC_ContenutoSpecificoPagina_valData8"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ADC_ContenutoSpecificoPagina_valData8 = document.all ? document.all["ADC_ContenutoSpecificoPagina_valData8"] : document.getElementById("ADC_ContenutoSpecificoPagina_valData8");
+ADC_ContenutoSpecificoPagina_valData8.controltovalidate = "ADC_ContenutoSpecificoPagina_txtData";
+ADC_ContenutoSpecificoPagina_valData8.errormessage = "gg/mm/aaaa";
+ADC_ContenutoSpecificoPagina_valData8.isvalid = "False";
+ADC_ContenutoSpecificoPagina_valData8.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ADC_ContenutoSpecificoPagina_valData8.validationexpression = "(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d";
+//]]>
+</script>
+
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'ContentPlaceHolder1_Menu1', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>
